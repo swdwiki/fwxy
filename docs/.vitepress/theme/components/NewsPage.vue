@@ -47,13 +47,6 @@
     const selectIndex = years.value.find((yearinfo)=>yearinfo.year === Number(now_year));
     selectYearIndex.value  = selectIndex.index;
   })
-
-
-
-//   const getInfo = ()=>{
-//     console.log(newlist)
-//   }
-//   getInfo()
 </script>
 <style scoped>
 

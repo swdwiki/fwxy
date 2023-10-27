@@ -128,7 +128,6 @@ function getItems (path: string) {
     objectMode: true,
   }).forEach(({ name }) => {
     let groupName = name;
-    console.log(groupName);
     // 2.获取分组下的所有文章
     sync(`docs/${path}/${groupName}/*`, {
       onlyFiles: true,

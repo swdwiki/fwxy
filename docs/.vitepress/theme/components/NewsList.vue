@@ -12,7 +12,7 @@
         <a-typography-text :style="{ fontSize: '12px', marginTop: '4px' }" class="dark:text-white">
           {{ newinfo.desc }}
         </a-typography-text>
-        <!-- <br> -->
+        <!-- <br /> -->
         <template
           v-if="
             newinfo.urls &&
@@ -53,8 +53,4 @@ const props = defineProps({
     },
   },
 });
-
-console.log(1);
-
-console.log(props.news);
 </script>
