@@ -1,7 +1,7 @@
 {
-  "name": "charles7c-repo",
-  "description": "查尔斯的个人知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。",
-  "author": "Charles7c",
+  "name": "fwxy-beta-6.0",
+  "description": "枫舞轩辕新版站点",
+  "author": "风城之心&天书书吏",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -14,10 +14,13 @@
     "@arco-design/web-vue": "^2.49.2",
     "@types/blueimp-md5": "^2.18.0",
     "@types/jquery": "^3.5.16",
+    "autoprefixer": "^10.4.16",
     "markdown-it": "^13.0.1",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-mathjax3": "^4.3.2",
     "mermaid": "9.3.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.4",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.4.8",
     "vitepress": "1.0.0-rc.4",
@@ -32,7 +35,9 @@
     "fast-glob": "^3.3.1",
     "gitalk": "^1.8.0",
     "gray-matter": "^4.0.3",
-    "jquery": "^3.7.0"
+    "jquery": "^3.7.0",
+    "vitepress-markdown-timeline": "^1.2.1",
+    "vitepress-theme-website": "^1.0.6"
   },
   "pnpm": {
     "overrides": {

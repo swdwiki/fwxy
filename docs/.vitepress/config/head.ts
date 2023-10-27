@@ -3,8 +3,8 @@ import { metaData } from './constants';
 
 export const head: HeadConfig[] = [
   ['link', { rel: 'icon', href: '/favicon.ico' }],
-  ['meta', { name: 'author', content: 'Charles7c' }],
-  ['meta', { name: 'keywords', content: '查尔斯的知识库, 知识库, 博客, Charles7c' }],
+  ['meta', { name: 'author', content: '风城之心' }],
+  ['meta', { name: 'keywords', content: '枫舞轩辕, 轩辕剑,轩辕天书,天书书吏' }],
 
   ['meta', { name: 'HandheldFriendly', content: 'True' }],
   ['meta', { name: 'MobileOptimized', content: '320' }],
@@ -22,38 +22,8 @@ export const head: HeadConfig[] = [
   ['script', {}, `var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?53af4b1a12fbe40810ca7ad39f8db9c7";
+    hm.src = "https://hm.baidu.com/hm.js?60abd0f338c4c44a923aa6251badd5f2";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
-  })();`],
-  // 页面访问量统计
-  ['script', {}, `
-  window.addEventListener('load', function() {
-    let oldHref = document.location.href, bodyDOM = document.querySelector('body');
-    const observer = new MutationObserver(function(mutations) {
-      if (oldHref != document.location.href) {
-        oldHref = document.location.href;
-        getPv()
-        window.requestAnimationFrame(function() {
-          let tmp = document.querySelector('body');
-          if(tmp != bodyDOM) {
-            bodyDOM = tmp;
-            observer.observe(bodyDOM, config);
-          }
-        })
-      }
-    });
-    const config = {
-      childList: true,
-      subtree: true
-    };
-    observer.observe(bodyDOM, config);
-    getPv()
-  }, true);
-
-  function getPv() {
-    xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://api.charles7c.top/blog/pv?pageUrl=' + location.href);
-    xhr.send();
-  }`]
+  })();`]
 ];

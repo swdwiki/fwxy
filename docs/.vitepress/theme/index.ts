@@ -3,7 +3,10 @@ import MyLayout from './MyLayout.vue';
 import './styles/vars.css';
 import './styles/custom.css';
 import axios from 'axios';
-import api from './api/index';
+// import api from './api/index';
+import "vitepress-markdown-timeline/dist/theme/index.css";
+import './styles/tailwind.css';
+// import { useLive2d } from 'vitepress-theme-website'
 
 export default {
   ...DefaultTheme,
@@ -14,11 +17,14 @@ export default {
 
     // 全局挂载 API 接口
     ctx.app.config.globalProperties.$http = axios
-    if (typeof window !== 'undefined') {
-        window.$api = api;
-    }
+    // if (typeof window !== 'undefined') {
+    //     window.$api = api;
+    // }
 
     // register your custom global components
     // ctx.app.component('MyGlobalComponent' /* ... */)
-  }
+  },
+  // setup(){
+  //   useLive2d()
+  // }
 }
