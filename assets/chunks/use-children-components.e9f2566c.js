@@ -1,0 +1,1 @@
+import{u as r}from"./index.517ce50b.js";import{h as a,j as l,D as m}from"./framework.4e1b6783.js";const p=s=>{const o={},n=a([]),e=()=>{if(o.value){const t=r(o.value,s);(t.length!==n.value.length||t.toString()!==n.value.toString())&&(n.value=t)}};return l(()=>e()),m(()=>e()),{children:o,components:n}};export{p as u};
