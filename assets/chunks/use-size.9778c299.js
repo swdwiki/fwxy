@@ -1,0 +1,1 @@
+import{e as t}from"./index.ef976c7e.js";import{O as u,g as d}from"./framework.3448e2cd.js";const s=(e,{defaultValue:n="medium"}={})=>{const o=u(t,void 0);return{mergedSize:d(()=>{var r,i;return(i=(r=e==null?void 0:e.value)!=null?r:o==null?void 0:o.size)!=null?i:n})}};export{s as u};
