@@ -6,7 +6,9 @@ import { resolve } from 'path';
 export default defineConfig({
   build:{
     chunkSizeWarningLimit: 1000,
+    assetsDir:'/fwxy',
   },
+  base:'/fwxy',
   plugins: [
     Components({
       dirs: ['.vitepress/theme/components'],
