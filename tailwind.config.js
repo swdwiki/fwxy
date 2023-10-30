@@ -2,10 +2,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [
-    './docs/.vitepress/**/*.vue',
-    './docs/.vitepress/**/*.js',
-    './docs/.vitepress/**/*.ts',
+  content: [
+    './docs/.vitepress/**/*.{vue,js,ts}',
     './docs/**/*.md',
   ],
   darkMode: 'class',

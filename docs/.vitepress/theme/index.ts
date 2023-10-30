@@ -6,7 +6,6 @@ import axios from 'axios';
 // import api from './api/index';
 import "vitepress-markdown-timeline/dist/theme/index.css";
 import './styles/tailwind.css';
-// import { useLive2d } from 'vitepress-theme-website'
 
 export default {
   ...DefaultTheme,

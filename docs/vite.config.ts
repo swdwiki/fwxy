@@ -4,6 +4,9 @@ import { ArcoResolver } from 'unplugin-vue-components/resolvers';
 import { resolve } from 'path';
 
 export default defineConfig({
+  build:{
+    chunkSizeWarningLimit: 1000,
+  },
   plugins: [
     Components({
       dirs: ['.vitepress/theme/components'],
