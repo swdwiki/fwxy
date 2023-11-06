@@ -1,13 +1,13 @@
 <template>
   <div class="container mx-auto lg:max-w-[1152px]">
     <div class="w-full text-center">
-      <span class="w-full text-center text-xl font-bold my-2 block"
+      <span class="w-full text-center text-base lg:text-xl font-bold lg:my-2 block"
         >最新消息</span
       >
     </div>
     <div class="w-full flex flex-col lg:flex-row lg:flex-wrap lg:justify-center lg:items-center lg:relative">
       <div
-        class="w-11/12 mx-auto lg:w-[calc(33%-10px)] rounded-xl bg-gray-100 lg:min-h-[150px] py-3 lg:py-5 my-2 px-10 flex flex-col justify-center items-left border border-gray-100 lg:hover:border lg:hover:border-gray-400 transition lg:hover:scale-105"
+        class="w-11/12 mx-auto lg:w-[calc(33%-10px)] rounded-xl bg-gray-100 lg:min-h-[150px] py-3 lg:py-5 my-2 px-5 lg:px-10 flex flex-col justify-center items-left border border-gray-100 lg:hover:border lg:hover:border-gray-400 transition lg:hover:scale-105"
         v-for="(newinfo, index) in list"
         :key="index"
       >
