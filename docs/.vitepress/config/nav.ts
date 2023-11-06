@@ -16,7 +16,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     items: [
       { text: '单机游戏', link: '/games/pc/index', activeMatch: '/games/pc/' },
       { text: '手机游戏', link: '/games/mobile/index', activeMatch: '/games/mobile/' },
-      { text: '网络游戏', link: '/games/pcweb/index', activeMatch: '/games/pcweb/' },
+      { text: '网络游戏', link: '/games/online/index', activeMatch: '/games/online/' },
       { text: '网页游戏', link: '/games/web/index', activeMatch: '/games/web/' },
     ],
     activeMatch: '/games/'
@@ -31,7 +31,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '漫画动画',
     items: [
-      { text: '漫画', link: '/comic_animation/comic/index', activeMatch: '/games/pcgame/' },
+      // { text: '漫画', link: '/comic_animation/comic/index', activeMatch: '/games/pcgame/' },
       { text: '动画', link: '/comic_animation/animation/index', activeMatch: '/games/mbgame/' },
     ],
     activeMatch: '/comic_animation/'

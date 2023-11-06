@@ -2,7 +2,10 @@ body {
   font-size: 16px;
 }
 
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-family: var(--vp-font-family-mono);
 }
 
@@ -12,7 +15,9 @@ pre, code, kbd, samp {
   border-top: none;
 }
 
-.vp-doc h3,h4,h5 {
+.vp-doc h3,
+h4,
+h5 {
   margin: 10px 0 0;
 }
 
@@ -20,26 +25,23 @@ pre, code, kbd, samp {
   font-size: 18px;
 }
 
-.vp-doc tr{
-  border:0px;
+.vp-doc tr {
+  border: 0px;
 }
 
 .vp-doc td {
-    border: 0px solid var(--vp-c-divider); 
-    padding: 0px;
+  border: 0px solid var(--vp-c-divider);
+  padding: 0px;
 }
 
 .vp-doc table {
-  width:100%;
-    display: table;
-    border-collapse: none;
-    margin: 0;
-    overflow-x: visible;
+  width: 100%;
+  display: table;
+  border-collapse: none;
+  margin: 0;
+  overflow-x: visible;
 }
 
-.VPDoc .content-container img {
-  border-radius: 5px;
-}
 
 /* slim scroll bar for windows based web browsers - works on firefox */
 * {
@@ -94,25 +96,25 @@ mjx-container > svg {
 .text-color-red {
   --color-red: 254 45 70;
   --tw-text-opacity: 1;
-  color: rgb(var(--color-red)/var(--tw-text-opacity));
+  color: rgb(var(--color-red) / var(--tw-text-opacity));
 }
 
 .text-color-orange {
   --color-orange: 255 102 0;
   --tw-text-opacity: 1;
-  color: rgb(var(--color-orange)/var(--tw-text-opacity));
+  color: rgb(var(--color-orange) / var(--tw-text-opacity));
 }
 
 .text-color-yellow {
   --color-yellow: 250 169 14;
   --tw-text-opacity: 1;
-  color: rgb(var(--color-yellow)/var(--tw-text-opacity));
+  color: rgb(var(--color-yellow) / var(--tw-text-opacity));
 }
 
 .text-color-gray {
   --color-gray: 145 149 163;
   --tw-text-opacity: 1;
-  color: rgb(var(--color-gray)/var(--tw-text-opacity));
+  color: rgb(var(--color-gray) / var(--tw-text-opacity));
 }
 
 .mr-\[6px\] {

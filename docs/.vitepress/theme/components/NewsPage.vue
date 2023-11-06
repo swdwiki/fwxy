@@ -3,7 +3,7 @@
         <div class="flex flex-row justify-between items-center">
             <h1>{{ selectYear }}年</h1>
         <a-select :style="{width:'320px'}" placeholder="请选择年份" :default-value="nowyear+'年'" @change="selectYears">
-            <a-option v-for="year in years" :key="year.index" :value="year.year" :label="`${year.year}年`"></a-option>
+            <a-option v-for="year in years" :key="year.index" :value="year.year+'年'" :label="`${year.year}年`"></a-option>
         </a-select>
         </div>
         <div class="mt-10">
@@ -27,9 +27,9 @@
   const list = ref<any>([]);
   const nowyear = ref(new Date().getFullYear());
 
-  const selectYears = (year: number) => {
-    selectYear.value = year;
-    const selectIndex = years.value.find((yearinfo)=>yearinfo.year === year);
+  const selectYears = (year: string) => {
+    selectYear.value = Number(year.split('年')[0]);
+    const selectIndex = years.value.find((yearinfo)=>yearinfo.year === Number(year.split('年')[0]));
     selectYearIndex.value  = selectIndex.index;
   }
 

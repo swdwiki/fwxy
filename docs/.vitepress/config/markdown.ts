@@ -2,6 +2,7 @@ import type { MarkdownOptions } from 'vitepress';
 import mathjax3 from 'markdown-it-mathjax3';
 import footnote from 'markdown-it-footnote';
 import timeline from "vitepress-markdown-timeline";
+import tasklist from 'markdown-it-task-lists';
 
 
 export const markdown: MarkdownOptions = {
@@ -16,6 +17,7 @@ export const markdown: MarkdownOptions = {
     md.use(mathjax3);
     md.use(footnote);
     md.use(timeline);
+    md.use(tasklist);
 
     md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
       let htmlResult = slf.renderToken(tokens, idx, options);

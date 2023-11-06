@@ -25,16 +25,16 @@ export const themeConfig: DefaultTheme.Config = {
   },
   // 搜索配置（二选一）
   search: {
-    provider: 'algolia',
-    options: algoliaSearchOptions,
+    // provider: 'algolia',
+    // options: algoliaSearchOptions,
     // 本地离线搜索
-    // provider: 'local',
-    // options: localSearchOptions
+    provider: 'local',
+    options: localSearchOptions
   },
   // 导航栏右侧社交链接配置
-  socialLinks: [
-    { icon: 'github', link: 'https://github.com/swdwiki/fwxy.github.io' },
-  ],
+  // socialLinks: [
+  //   { icon: 'github', link: 'https://github.com/swdwiki/swda' },
+  // ],
 
   // 自定义扩展: 文章元数据配置
   // @ts-ignore

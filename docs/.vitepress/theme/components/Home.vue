@@ -1,13 +1,10 @@
 <template>
-  <div class="">
-    <div class="header"></div>
-    <div class="list">
-      <div class="new-card">
-      </div>
-    </div>
+  <div class="w-1/3">
+    <NewNewList />
   </div>
 </template>
   <script setup>
+
 
   </script>
   

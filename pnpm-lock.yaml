@@ -34,6 +34,9 @@ dependencies:
   jquery:
     specifier: ^3.7.0
     version: 3.7.0
+  markdown-it-task-lists:
+    specifier: ^2.1.1
+    version: 2.1.1
   vitepress-markdown-timeline:
     specifier: ^1.2.1
     version: 1.2.1
@@ -2877,6 +2880,10 @@ packages:
     transitivePeerDependencies:
       - encoding
     dev: true
+
+  /markdown-it-task-lists@2.1.1:
+    resolution: {integrity: sha512-TxFAc76Jnhb2OUu+n3yz9RMu4CwGfaT788br6HhEDlvWfdeJcLUsxk1Hgw2yJio0OXsxv7pyIPmvECY7bMbluA==}
+    dev: false
 
   /markdown-it@13.0.1:
     resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}

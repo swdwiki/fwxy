@@ -10,8 +10,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/games/online/': getItems("games/online"),
   '/games/web/': getItems("games/web"),
   '/movies/tvplay/': getItems("movies/tvplay"),
-
+  '/comic_animation/animation/': getItems("comic_animation/animation"),
   '/basic/': getOneItems("basic"),
+  '/tongren/': getOneItems("tongren"),
 }
 
 /**
@@ -119,7 +120,7 @@ function getItems (path: string) {
   let items: DefaultTheme.SidebarItem[] = [];
   let total = 0;
   // 当分组内文章数量少于 2 篇或文章总数显示超过 20 篇时，自动折叠分组
-  const groupCollapsedSize = 4;
+  const groupCollapsedSize = 1;
   const titleCollapsedSize = 20;
 
   // 1.获取所有分组目录
@@ -137,7 +138,7 @@ function getItems (path: string) {
       const { data } = articleFile;
       // 向前追加标题
       items.push({
-        text: data.title,
+        text: data.title?data.title:(article.name.split('-')[1]?(article.name.split('-')[1].replace('.md', '')):''),
         link: `/${path}/${groupName}/${article.name.replace('.md', '')}`,
       });
       total += 1;
@@ -186,7 +187,7 @@ function getOneItems (path: string) {
       const { data } = articleFile;
       // 向前追加标题
       items.push({
-        text: data.title,
+        text: data.title || article.name.replace('.md', ''),
         link: `/${path}/${groupName}/${article.name.replace('.md', '')}`,
       });
       total += 1;

@@ -6,9 +6,7 @@ import { resolve } from 'path';
 export default defineConfig({
   build:{
     chunkSizeWarningLimit: 1000,
-    assetsDir:'/swda/',
   },
-  base:'/swda/',
   plugins: [
     Components({
       dirs: ['.vitepress/theme/components'],
@@ -20,7 +18,7 @@ export default defineConfig({
   resolve: {
     alias: {
       'mermaid': 'mermaid/dist/mermaid.esm.mjs',
-      '@': resolve(__dirname, './pulbic/'), // 把 @ 指向到 src 目录去
+      '@': resolve(__dirname, './docs/img'), // 把 @ 指向到 src 目录去
     },
   },
 });
