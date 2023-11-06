@@ -3,7 +3,7 @@
     <template #home-hero-info>
     </template>
     <template #home-hero-image>
-      <a-image width="250px" :src="kbn"></a-image>
+      <a-image class="mt-10 lg:mt-1" width="250px" :src="kbn"></a-image>
     </template>
     <template #home-hero-after>
       <center>
